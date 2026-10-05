@@ -1,0 +1,29 @@
+{
+  "output": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 24,
+    "durationSeconds": 12,
+    "framesDir": "output/frames",
+    "videoPath": "output/route-video.mp4"
+  },
+  "scene": {
+    "seed": 20261005,
+    "tileWidth": 92,
+    "tileHeight": 46,
+    "origin": { "x": 540, "y": 900 },
+    "title": "GHOST ROUTE",
+    "subtitle": "Follow Boo to the midnight meetup",
+    "palette": { "sky": "#09051c", "ground": "#17102f", "grid": "#4d2b72", "route": "#ff8a00", "cyan": "#2de2e6", "purple": "#b026ff" },
+    "route": [{"x":-5,"y":3},{"x":-2,"y":3},{"x":-2,"y":0},{"x":2,"y":0},{"x":2,"y":-3},{"x":5,"y":-3}],
+    "buildings": [
+      {"id":"crypt","x":-5,"y":-2,"width":2,"depth":2,"height":3},
+      {"id":"tower-a","x":-2,"y":-4,"width":2,"depth":2,"height":5},
+      {"id":"arcade","x":1,"y":-4,"width":3,"depth":2,"height":2.5},
+      {"id":"hotel","x":4,"y":-1,"width":2,"depth":3,"height":4},
+      {"id":"cafe","x":-4,"y":4,"width":3,"depth":2,"height":2},
+      {"id":"tower-b","x":0,"y":4,"width":2,"depth":2,"height":4},
+      {"id":"station","x":4,"y":3,"width":3,"depth":2,"height":3}
+    ]
+  }
+}

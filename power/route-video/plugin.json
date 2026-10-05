@@ -1,0 +1,11 @@
+{
+  "name": "route-video",
+  "displayName": "Route Video Power",
+  "version": "1.0.0",
+  "description": "Node.jsとFFmpegで決定論的な縦型ルート動画を設計・検証する自己完結Power",
+  "skills": [{ "name": "route-video", "path": "skills/route-video/SKILL.md" }],
+  "resources": ["resources/checklist.md"],
+  "mcpServers": {
+    "route-video-power": { "command": "node", "args": ["mcp/server.mjs"] }
+  }
+}

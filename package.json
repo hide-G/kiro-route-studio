@@ -1,0 +1,31 @@
+{
+  "name": "kiro-route-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ハロウィン調のアイソメ街ルート動画を決定論的に生成するKiro Spec駆動デモ",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "render": "node src/cli.mjs",
+    "render:preview": "node scripts/render-preview.mjs",
+    "render:smoke": "node scripts/render-preview.mjs --frames-only",
+    "web": "node src/web/server.mjs",
+    "test": "node --test test/unit/core.test.mjs test/unit/render.test.mjs test/integration/web.test.mjs",
+    "test:unit": "node --test test/unit/core.test.mjs test/unit/render.test.mjs",
+    "test:pbt": "node --test test/properties/isometric.property.test.mjs test/properties/route.property.test.mjs test/properties/config.property.test.mjs test/properties/timeline.property.test.mjs test/properties/render.property.test.mjs",
+    "test:web": "node --test test/integration/web.test.mjs",
+    "validate:scene": "node scripts/validate-scene.mjs",
+    "mcp:smoke": "node scripts/mcp-smoke.mjs",
+    "verify:video": "node scripts/verify-video.mjs output/preview.mp4 1080 1920 1",
+    "validate:kiro": "node scripts/validate-kiro.mjs",
+    "validate:infra": "node scripts/validate-infra.mjs",
+    "verify:submission": "node scripts/verify-submission.mjs",
+    "verify:all": "node scripts/verify-all.mjs"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "0.1.80"
+  },
+  "devDependencies": {
+    "fast-check": "4.3.0"
+  }
+}

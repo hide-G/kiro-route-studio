@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "name": "ESM保存時の高速テスト",
+  "description": "実装保存後にNode.jsと同じ技術スタックで高速単体テストを実行する",
+  "when": { "type": "fileEdited", "patterns": ["src/**/*.mjs", "scenes/*.json"] },
+  "then": { "type": "runCommand", "command": "npm run test:unit && npm run validate:scene" }
+}

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "route-video-readonly": {
+      "command": "node",
+      "args": ["src/mcp/server.mjs"],
+      "disabled": false,
+      "autoApprove": ["list_scenes", "get_scene_summary", "get_verification_summary"]
+    }
+  }
+}

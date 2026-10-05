@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "name": "Spec保存時の整合性確認",
+  "description": "route-video Spec更新後に要件・設計・タスクの追跡を確認する",
+  "when": { "type": "fileEdited", "patterns": [".kiro/specs/route-video/*.md"] },
+  "then": { "type": "askAgent", "prompt": "変更したSpecと実装の不整合を確認し、必要ならtasks.mdだけを実態に合わせて更新してください。AWS操作やGit操作はしないでください。" }
+}
